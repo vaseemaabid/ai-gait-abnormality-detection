@@ -2,28 +2,46 @@
 
 An AI-powered system that detects gait abnormalities from walking videos using MediaPipe Pose, OpenCV, and Machine Learning techniques.
 
+## Problem Statement
+
+People with gait abnormalities may suffer from neurological, orthopedic, or movement-related disorders. Manual gait assessment can be time-consuming and subjective. This project automates gait analysis using computer vision and machine learning techniques.
+
 ## Technologies Used
 
+### Programming Language
 - Python
+
+### Computer Vision
 - OpenCV
 - MediaPipe Pose
+
+### Machine Learning
 - Scikit-learn
-- Google Colab
-- Jupyter Notebook
+- Random Forest
+- Support Vector Machine (SVM)
+- K-Nearest Neighbors (KNN)
 
-## Performance
-
-| Metric           | Value                   |
-| ---------------- | ----------------------- |
-| Dataset Size     | 500+ Samples            |
-| Accuracy         | 92%                     |
-| Models Evaluated | Random Forest, SVM, KNN |
-
-## Development Tools
-
+### Development Tools
 - Google Colab
 - Jupyter Notebook
 - GitHub
+
+## Features
+
+- Human Pose Estimation
+- Extraction of 33 Body Keypoints
+- Video Processing using OpenCV
+- Feature Engineering
+- Machine Learning Classification
+- Gait Abnormality Detection
+
+## Performance
+
+| Metric | Value |
+|----------|----------|
+| Dataset Size | 500+ Samples |
+| Accuracy | 92% |
+| Models Evaluated | Random Forest, SVM, KNN |
 
 ## Project Workflow
 
@@ -36,13 +54,33 @@ An AI-powered system that detects gait abnormalities from walking videos using M
 
 ## Repository Structure
 
-src/
-├── pose_extraction.py
-├── train_model.py
+```text
+ai-gait-abnormality-detection/
 
-data/
-models/
-results/
+├── data/
+│   └── README.md
+
+├── models/
+│   └── README.md
+
+├── results/
+│   ├── README.md
+│   └── project_results.md
+
+├── src/
+│   ├── pose_extraction.py
+│   └── train_model.py
+
+├── requirements.txt
+└── README.md
+```
+
+## Results
+
+- Successfully extracted pose landmarks using MediaPipe Pose.
+- Processed walking videos and generated gait features.
+- Trained Random Forest, SVM, and KNN classifiers.
+- Achieved 92% classification accuracy on the evaluation dataset.
 
 ## Future Improvements
 
@@ -50,3 +88,12 @@ results/
 - Deep Learning based classification
 - Mobile healthcare application
 - Cloud-based monitoring dashboard
+- Integration with hospital monitoring systems
+
+## Author
+
+**Mahammad Vaseem Aabid**
+
+- B.Tech Computer Science and Engineering
+- VIT-AP University
+- Aspiring Software Development Engineer
